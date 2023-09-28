@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="app.js" defer></script>
+    <script src="https://kit.fontawesome.com/051f1f7418.js" crossorigin="anonymous"></script>
+
+
+
+</head>
+
+
+<body>
+    <div class="container">
+        <h1 style="font-family: 'Comfortaa', cursive; font-weight: bold; color: white;"><i class="fa-solid fa-book-open"></i> Manhwa/Manhua List</h1>
+        
+        <form style="color: white;" id="book-form">
+            <div class="form-group">
+                <label for="title"><i class="fa-solid fa-book-journal-whills"></i> Title</label>
+                <input type="text" id="title" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label for="author"><i class="fa-solid fa-pen"></i> Author</label>
+                <input type="text" id="author" class="form-control">
+            </div>
+
+            <div class="form-group">
+                <label for="chapter"><i class="fa-solid fa-hashtag"></i> Chapter</label>
+                <input type="text" id="chapter" class="form-control">
+            </div>
+
+            <input type="submit" value="Add Manhwa" class="btn">
+        </form>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th class="Head">Title</th>
+                    <th class="Aut">Author</th>
+                    <th class="Chap">Chapter</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody id="book-list"></tbody>
+        </table>
+
+    </div>
+
+</body>
+</html>
